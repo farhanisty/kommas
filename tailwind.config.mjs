@@ -12,6 +12,9 @@ export default {
 				'light': '#FFFFFF'
 			}
 		},
+		fontFamily: {
+			'sans': ['Helvetica', 'sans-serif'],
+		}
 	},
 	plugins: [],
 }
