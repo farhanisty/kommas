@@ -1,0 +1,117 @@
+<header class="h-screen flex justify-center items-center sticky top-0 -z-50">
+  <div class="md:max-w-[800px] px-4">
+    <h1 
+       data-aos="fade-right"
+       data-aos-duration="1500"
+       class="text-4xl md:text-5xl font-semibold leading-normal md:leading-normal">
+      IDENTIFIKASI PERMASALAHAN PADA UMKM PENJAHIT <span class="bg-custom-yellow">"EN DJOH CHU"</span>
+    </h1>
+    <p 
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    class="mt-3 text-sm md:text-lg italic">
+      Oleh kelompok 3 Komputer dan Masyarakat IF-D
+    </p>
+  </div>
+
+  <div 
+    class="absolute bottom-3 z-10 flex justify-center flex-col items-center gap-2">
+    <p class="text-sm md:text-lg">scroll down</p>
+
+    <div>
+      <span class="m_scroll_arrows unu"></span>
+      <span class="m_scroll_arrows doi"></span>
+      <span class="m_scroll_arrows trei"></span>
+    </div>
+  </div>
+</header>
+
+<style>
+  .m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+     
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0 0 3px 4px;
+    
+    width: 12px;
+    height: 12px;
+  }
+  
+  .unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+  @-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+</style>
