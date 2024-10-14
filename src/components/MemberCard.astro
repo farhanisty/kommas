@@ -1,0 +1,23 @@
+---
+interface Props {
+  imageSrc: string;
+  name: string;
+  id: string;
+  delay: int;
+}
+
+const {imageSrc, name, id, delay} = Astro.props
+const style = `h-full bg-[url('images/${imageSrc}.webp')] h-[400px] bg-cover bg-no-repeat bg-center`;
+---
+<li 
+  data-aos="fade-right"
+  data-aos-delay={delay}
+  class="relative overflow-hidden">
+  <div>
+    <img src=`images/${imageSrc}.webp` alt={ name }>
+  </div>
+  <div class="absolute bottom-0">
+    <h1 class="text-6xl font-bold text-custom-light">{name}</h1>
+    <h2 class="text-5xl font-semibold text-custom-light">{id}</h2>
+  </div>
+</li>
