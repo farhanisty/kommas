@@ -2,9 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Teams from '../components/Teams.astro';
+import Article from '../components/Article.astro';
+import ArticleParagraph from '../components/ArticleParagraph.astro';
 ---
 
 <Layout title="Kelompok 3 Komputer dan Masyarakat">
 	<Header />
 	<Teams />
+	<main class="min-h-screen bg-custom-light z-50 snap-start absolute w-screen">
+		<Article title="PDF">
+			<ArticleParagraph isIndent={false}>Download laporan PDF:</ArticleParagraph>
+			<a class="inline-block my-5 bg-custom-yellow py-2 px-3 rounded bg-custom-darkblue hover:opacity-75" href="laporan_kelompok3_if-d.pdf">Download PDF</a>
+		</Article>
+		</div>
+	</main>
 </Layout>
