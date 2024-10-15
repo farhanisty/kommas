@@ -1,0 +1,12 @@
+---
+interface Props {
+  isIndent: boolean;
+}
+
+const { isIndent = true } = Astro.props;
+const style = `mb-3 text-justify ${isIndent ? 'indent-10' : ''} text-lg md:text-3xl`
+
+---
+<p class={style} style="color: #434343">
+<slot />
+</p>
